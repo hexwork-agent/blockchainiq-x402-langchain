@@ -1,0 +1,26 @@
+{
+  "name": "blockchainiq-x402-langchain",
+  "version": "1.0.0",
+  "description": "LangChain tools that pay for blockchainiq.co market data over the x402 protocol (USDC on Base or Solana)",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "paid": "node examples/paid-call.mjs",
+    "langchain": "node examples/langchain-tool.mjs",
+    "smoke": "node test/free-check.mjs"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.42",
+    "@noble/curves": "^1.4.0",
+    "@scure/base": "^1.2.4",
+    "@solana/kit": "^8.0.0",
+    "@x402/evm": "^2.30.0",
+    "@x402/fetch": "^2.30.0",
+    "@x402/svm": "^2.30.0",
+    "viem": "^2.30.0",
+    "zod": "^3.25.0"
+  }
+}

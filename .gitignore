@@ -1,0 +1,6 @@
+node_modules/
+.env
+wallets/
+*.secret
+*.key
+npm-debug.log*
